@@ -1,0 +1,11 @@
+<view class='container'>
+  <navigator url='../../pages/2048-3/2048-3'>
+    <text class='mode_Button'>3×3 Mode</text>
+  </navigator>
+  <navigator url='../../pages/2048-4/2048-4'>
+    <text class='mode_Button'>4×4 Mode</text>
+  </navigator>
+  <navigator url='../../pages/2048-5/2048-5'>
+    <text class='mode_Button'>5×5 Mode</text>
+  </navigator>
+</view>

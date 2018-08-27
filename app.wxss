@@ -1,0 +1,162 @@
+.container {
+  margin: 0;
+  height: 100%;
+  background: #faf8ef;
+  color: #776e65;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 36rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border;
+}
+
+.game-body {
+}
+
+.heading {
+  margin-bottom: 20rpx;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.scores-container {
+  float: right;
+  text-align: right;
+}
+
+.score-container, .best-container {
+  position: relative;
+  display: inline-block;
+  background: #bbada0;
+  padding: 30rpx 20rpx;
+  min-width: 80rpx;
+  font-size: 50rpx;
+  height: 50rpx;
+  line-height: 94rpx;
+  font-weight: bold;
+  border-radius: 6rpx;
+  color: white;
+  text-align: center;
+  margin: 16rpx 0 0 16rpx;
+}
+
+.score-container::after, .best-container::after {
+  position: absolute;
+  width: 100%;
+  top: 20rpx;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  text-align: center;
+  color: #eee4da;
+}
+
+.score-container::after {
+  content: "Score";
+}
+
+.best-container::after {
+  content: "Best";
+}
+
+.above-game::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.restart-button {
+  display: block;
+  background: #8f7a66;
+  border-radius: 6rpx;
+  padding: 0 60rpx;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 80rpx;
+  line-height: 84rpx;
+  text-align: center;
+  float: right;
+}
+
+.game-container {
+  margin-top: 80rpx;
+  position: relative;
+  padding: 30rpx;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  background: #bbada0;
+  border-radius: 12rpx;
+  width: 620rpx;
+  height: 620rpx;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.game-container .game-message {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(238, 228, 218, 0.5);
+  z-index: 100;
+  text-align: center;
+}
+
+.game-container .game-message .over-msg {
+  display: block;
+  font-size: 60rpx;
+  font-weight: bold;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 118rpx;
+}
+
+.game-container .game-message .lower {
+  display: block;
+  margin-top: 118rpx;
+}
+
+.game-container .game-message .retry-button {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 6rpx;
+  padding: 0 40rpx;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 80rpx;
+  line-height: 84rpx;
+  margin-left: 18rpx;
+}
+
+.game-container .game-message.game-won {
+  background: rgba(237, 194, 46, 0.5);
+  color: #f9f6f2;
+}
+
+.game-container .game-message.game-won, .game-container .game-message.game-over {
+  display: block;
+}
+

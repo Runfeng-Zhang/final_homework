@@ -1,0 +1,121 @@
+.grid-container {
+  position: absolute;
+  z-index: 1;
+}
+
+.grid-row {
+  margin-bottom: 20rpx;
+}
+
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-cell {
+  width: 96rpx;
+  height: 96rpx;
+  margin-right: 20rpx;
+  float: left;
+  border-radius: 6rpx;
+  background: rgba(33, 204, 10, 0.35);
+}
+
+.tile {
+  position: absolute;
+}
+
+.tile .tile-inner {
+  border-radius: 6rpx;
+  background: #180b12;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 70rpx;
+}
+
+.tile, .tile .tile-inner {
+  width: 96rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+}
+
+.tile.tile-2 .tile-inner {
+  color: #c59362;
+  background: #fff;
+}
+
+.tile.tile-4 .tile-inner {
+  color: #776e65;
+  background: #ede0c8;
+}
+
+.tile.tile-8 .tile-inner {
+  color: #aa6d1e;
+  background: #f2b179;
+}
+
+.tile.tile-16 .tile-inner {
+  color: #f9f6f2;
+  background: #f59563;
+  font-size: 60rpx;
+}
+
+.tile.tile-32 .tile-inner {
+  color: #f9f6f2;
+  background: #f67c5f;
+  font-size: 60rpx;
+}
+
+.tile.tile-64 .tile-inner {
+  color: #f9f6f2;
+  background: #f65e3b;
+  font-size: 60rpx;
+}
+
+.tile.tile-128 .tile-inner {
+  color: #f9f6f2;
+  background: #edcf72;
+  font-size: 47rpx;
+}
+
+.tile.tile-256 .tile-inner {
+  color: #f9f6f2;
+  background: #edcc61;
+  font-size: 47rpx;
+}
+
+.tile.tile-512 .tile-inner {
+  color: #f9f6f2;
+  background: #edc850;
+  font-size: 47rpx;
+}
+
+.tile.tile-1024 .tile-inner {
+  color: #f9f6f2;
+  background: #edc53f;
+  font-size: 28rpx;
+}
+
+.tile.tile-2048 .tile-inner {
+  color: #f9f6f2;
+  background: #edc22e;
+  font-size: 28rpx;
+}
+.menu-button {
+  display: inline-block;
+  background: #678f66;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: left;
+}
+.game-explanation {
+  margin-top: 50px;
+}

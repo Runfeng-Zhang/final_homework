@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/2048-4/2048-4",
+    "pages/2048-5/2048-5",
+    "pages/2048-3/2048-3",
+    "pages/menu/menu",
+    "pages/game_mode/game_mode"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#faf8ef",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText":"2048",
+    "backgroundColor":"#666",
+    "backgroundTextStyle":"light"
+  },
+  "networkTimeout":{
+    "request":10000,
+    "downloadFile":10000
+  },
+  "debug":false
+}

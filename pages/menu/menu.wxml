@@ -1,0 +1,8 @@
+<view class='container'>
+  <navigator url='../../pages/game_mode/game_mode'>
+    <text class='button'>Choose Game Mode</text>
+   </navigator>
+  <text class='button'>How to Play</text>
+  <text class='button'>Rank</text>
+   <text class='button'>Contact Us</text>
+</view>

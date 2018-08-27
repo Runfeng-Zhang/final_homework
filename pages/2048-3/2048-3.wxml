@@ -1,0 +1,43 @@
+<view class="container">
+
+  <view class="game-body">
+    <loading hidden="{{hidden}}">
+      Loading...
+    </loading>
+    <view class="heading">
+      <view class="scores-container">
+        <view class="score-container">{{score}}</view>
+        <view class="best-container">{{highscore}}</view>
+      </view>
+    </view>
+
+    <view class="above-game">
+    <navigator url='../../pages/menu/menu'>
+        <text class="menu-button" >Menu</text>
+     </navigator>
+      <text class="restart-button" bindtap="restart">New Game</text>
+    </view>
+
+    <view class="game-container">
+      <view class="game-message game-{{over ? (win ? 'won' : 'over') : ''}}">
+        <text class="over-msg">{{overMsg}}</text>
+        <view class="lower">
+          <text class="retry-button" bindtap="restart">Try Again!</text>
+        </view>
+      </view>
+
+      <view class="grid-container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+        <view wx:for="{{grids}}" wx:key="grids_{{index}}" wx:for-index="rowIdx" wx:for-item="row" class="grid-row">
+          <view wx:for="{{row}}" wx:key="grid_{{index}}" wx:for-index="colIdx" wx:for-item="cell" class="grid-cell">
+            <view class="tile tile-{{cell.value}}">
+              <view wx:if="{{cell}}" class="tile-inner">
+                {{cell.value}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  </view>

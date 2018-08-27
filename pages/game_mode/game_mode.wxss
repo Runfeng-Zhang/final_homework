@@ -1,0 +1,24 @@
+.container{
+  display: felx;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  height: 100vh;
+}
+.mode_Button {
+  display: inline-block;
+  background: green;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  width:180px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+}
+.container::after{
+  border: 1px solid #CC3333
+}
